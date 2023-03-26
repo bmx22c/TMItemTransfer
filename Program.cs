@@ -134,10 +134,11 @@ namespace Triangle3DAnimation
 			Console.ResetColor();
 
 			Console.WriteLine("Usage:");
-			Console.WriteLine("	TMItemTransfer.exe [[--display-logs] | [--time] | [--howto] | {--input-map --output-map [--offset]}]");
+			Console.WriteLine("	TMItemTransfer.exe [[--assisted] [--display-logs] [--time] [--howto] {--input-map --output-map} [--offset]]");
 			Console.WriteLine();
 			Console.WriteLine("Options:");
 			Console.ForegroundColor = ConsoleColor.DarkYellow; Console.Write("	--help"); Console.ResetColor(); Console.WriteLine("			Display this help");
+			Console.ForegroundColor = ConsoleColor.DarkYellow; Console.Write("	--assisted"); Console.ResetColor(); Console.WriteLine("		Launch the program with a step by step process");
 			Console.ForegroundColor = ConsoleColor.DarkYellow; Console.Write("	--input-map={map_name}"); Console.ResetColor(); Console.WriteLine("	The input map (without \".Map.Gbx\")");
 			Console.ForegroundColor = ConsoleColor.DarkYellow; Console.Write("	--output-map={map_name}"); Console.ResetColor(); Console.WriteLine("	The output map (without \".Map.Gbx\")");
 			Console.ForegroundColor = ConsoleColor.DarkYellow; Console.Write("	--offset=X,Y,Z"); Console.ResetColor(); Console.WriteLine("		The offset to add to all the items (floats)");
